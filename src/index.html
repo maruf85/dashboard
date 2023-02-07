@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../dist/main.css">
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <div class="flex w-[100%]">
+    <!-- Sidebar -->
+    <aside class="bg-slate-900 w-[250px] h-screen sticky top-0 lg:block hidden px-2 py-4">
+      <div class=""></div>
+      <!-- Menu item -->
+      <ul class="flex flex-col gap-y-2">
+        <li class="flex gap-x-3 items-center rounded px-3 py-2 hover:bg-slate-700 cursor-pointer">
+          <img src="./assets/home.svg" alt="home-icon" class="invert w-[18px] h-[18px]">
+          <span class="text-white">Dashboard</span>
+        </li>
+        <li class="flex gap-x-3 items-center rounded px-3 py-2 hover:bg-slate-700 cursor-pointer">
+          <img src="./assets/layers.svg" alt="products-icon" class="invert w-[18px] h-[18px]">
+          <span class="text-white">Products</span>
+        </li>
+        <li class="flex gap-x-3 items-center rounded px-3 py-2 hover:bg-slate-700 cursor-pointer">
+          <img src="./assets/user.svg" alt="customers-icon" class="invert w-[18px] h-[18px]">
+          <span class="text-white">Customers</span>
+        </li>
+        <li class="flex gap-x-3 items-center rounded px-3 py-2 hover:bg-slate-700 cursor-pointer">
+          <img src="./assets/shopping-cart.svg" alt="orders-icon" class="invert w-[18px] h-[18px]">
+          <span class="text-white">Orders</span>
+        </li>
+        <li class="flex gap-x-3 items-center rounded px-3 py-2 hover:bg-slate-700 cursor-pointer">
+          <img src="./assets/activity.svg" alt="analytics-icon" class="invert w-[18px] h-[18px]">
+          <span class="text-white">Analytics</span>
+        </li>
+        <li class="flex gap-x-3 items-center rounded px-3 py-2 hover:bg-slate-700 cursor-pointer">
+          <img src="./assets/settings.svg" alt="settings-icon" class="invert w-[18px] h-[18px]">
+          <span class="text-white">Settings</span>
+        </li>
+      </ul>
+      <!-- Menu item end -->
+    </aside>
+    <!-- Sidebar end -->
+
+    <!-- Container -->
+    <div class="w-[100%]">
+      <!-- Topbar -->
+      <div class="bg-white h-14 sticky top-0 flex items-center justify-between p-4 border-b-[1px] border-slate-200">
+        <img src="./assets/menu.svg" alt="menu-icon" class="cursor-pointer">
+      </div>
+      <!-- Topbar end -->
+
+      <!-- Main -->
+      <main class="p-4">
+        <div class="lg:columns-4 lg:block flex flex-col gap-y-2">
+          <div class="bg-blue-100 h-100 rounded-lg p-4 font-poppins">
+            <h4 class="font-semibold text-slate-800">Total Amount</h4>
+            <h2 class="font-bold text-slate-900 text-[32px]">$ 4200</h2>
+          </div>
+          <div class="bg-gray-100 h-100 rounded-lg p-4 font-poppins">
+            <h4 class="font-semibold text-slate-800">Total Amount</h4>
+            <h2 class="font-bold text-slate-900 text-[32px]">$ 4200</h2>
+          </div>
+          <div class="bg-gray-100 h-100 rounded-lg p-4 font-poppins">
+            <h4 class="font-semibold text-slate-800">Total Amount</h4>
+            <h2 class="font-bold text-slate-900 text-[32px]">$ 4200</h2>
+          </div>
+          <div class="bg-gray-100 h-100 rounded-lg p-4 font-poppins">
+            <h4 class="font-semibold text-slate-800">Total Amount</h4>
+            <h2 class="font-bold text-slate-900 text-[32px]">$ 4200</h2>
+          </div>
+        </div>
+      </main>
+      <!-- Main end -->
+    </div>
+    <!-- Container end -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "admin-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/main.css -o ./dist/main.css -w",
+    "build": "tailwindcss build -i ./src/main.css -o ./dist/main.css --minify && npm run copy-content",
+    "copy-content": "babel src --out-dir dist && cp ./src/*.html ./dist && cp -r ./src/assets/. ./dist/assets/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "babel-cli": "^6.26.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
+  }
+}
