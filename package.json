@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tailwindcss -i ./src/main.css -o ./dist/main.css -w",
     "build": "tailwindcss build -i ./src/main.css -o ./dist/main.css --minify && npm run copy-content",
-    "copy-content": "babel src --out-dir dist && cp ./src/*.html ./dist && cp -r ./src/assets/. ./dist/assets/"
+    "copy-content": "babel src --out-dir dist && cp ./src/*.html ./dist && cp -r ./src/assets/. ./dist/assets/ && cp -r ./src/js/. ./dist/js/"
   },
   "author": "",
   "license": "ISC",
