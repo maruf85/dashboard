@@ -22,7 +22,7 @@ Chart.defaults.plugins.tooltip.caretPadding = 20;
 Chart.defaults.plugins.tooltip.cornerRadius = 4;
 Chart.defaults.plugins.tooltip.padding = 8;
 
-const ctx = document.getElementById('analytics-card-01');
+const ctx = document.getElementById('line-chart');
 const chart = new Chart(ctx, {
   type: 'line',
   data: {
@@ -126,3 +126,27 @@ const chart = new Chart(ctx, {
     maintainAspectRatio: false,
   },
 });
+
+const dataPie = {
+  labels: ["Completed", "Cancelled", "Pending"],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [300, 50, 100],
+      backgroundColor: [
+        "rgb(133, 105, 241)",
+        "rgb(164, 101, 241)",
+        "rgb(101, 143, 241)",
+      ],
+      hoverOffset: 4,
+    },
+  ],
+};
+
+const configPie = {
+  type: "pie",
+  data: dataPie,
+  options: {},
+};
+
+var chartBar = new Chart(document.getElementById("pie-chart"), configPie);

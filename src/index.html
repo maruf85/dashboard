@@ -92,8 +92,8 @@
         </section>
         <!-- Widget end-->
 
-        <section class="grid xl:grid-cols-3 gap-4 xl:justify-evenly">
-          <div class="bg-white rounded-xl col-span-2">
+        <section class="grid xl:grid-cols-3 grid-cols-2 gap-4 xl:justify-evenly">
+          <div class="bg-white rounded-xl col-span-2 xl:max-h-[487px] xl:w-auto">
             <header class="px-5 py-4 border-b border-gray-100 flex items-center">
               <h2 class="font-semibold text-gray-800">Sales Overview</h2>
             </header>
@@ -145,14 +145,17 @@
               </div>
             </div>
             <div class="flex-grow">
-              <canvas id="analytics-card-01" width="800" height="350"></canvas>
+              <canvas id="line-chart" height="350"></canvas>
             </div>
           </div>
 
-          <div class="bg-white rounded-xl">
+          <div class="bg-white rounded-xl col-span-2 xl:col-span-1 xl:max-h-[487px] xl:w-auto">
             <header class="px-5 py-4 border-b border-gray-100 flex items-center">
               <h2 class="font-semibold text-gray-800">Sales Overview</h2>
             </header>
+            <div class="flex justify-center items-center h-[420px]">
+              <canvas class="p-8" id="pie-chart"></canvas>
+            </div>
           </div>
         </section>
       </main>
